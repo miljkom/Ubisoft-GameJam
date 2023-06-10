@@ -637,10 +637,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f21200563ef5b0643b27600a243bd1d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  battery: 0
+  battery: 100
   corrosion: 0
-  water: 0
-  seed: 0
+  water: 100
+  seed: 1
 --- !u!114 &6626253530693957429
 MonoBehaviour:
   m_ObjectHideFlags: 0
