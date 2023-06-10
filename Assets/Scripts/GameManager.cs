@@ -35,18 +35,11 @@ public class GameManager : MonoBehaviour
         playerInfo.seed = 1;
     }
 
-    public void RootInit()
+    private void RootInit(int index)
     {
-        if (rootInfo.Count == 0)
-        {
-            rootInfo[0].health = 100;
-            rootInfo[0].timer = 60;
-            return;
-        }
-
-        var index = rootInfo.Count;
         rootInfo[index].health = 100;
         rootInfo[index].timer = 60;
+        playerInfo.seed++;
     }
 
     public void RefillResources()
@@ -75,6 +68,6 @@ public class GameManager : MonoBehaviour
 
     public void SectorWithIndexCleared(int indexOfSector)
     {
-        Debug.LogError("Miljko ubaci me!!!");
+        RootInit(indexOfSector);
     }
 }

@@ -33,7 +33,7 @@ public class PlayerInputManager : MonoBehaviour
         }
         else if (Keyboard.current.sKey.isPressed)
         {
-            _animatior.Play("Robot_Move_L");
+            _animatior.Play("Robot_Move_R");
         }
         else
         {

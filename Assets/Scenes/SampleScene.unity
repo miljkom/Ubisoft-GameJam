@@ -123,26 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &24366915 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5484544730339647669, guid: be5a5d483b6e48b488c5d0b2b047e1ec, type: 3}
-  m_PrefabInstance: {fileID: 1050651080}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &24366916
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 24366915}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe50459a98b92374da9afa2486d6ab78, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerInfo: {fileID: 2043961239}
-  rootInfo: []
-  gameOver: 0
 --- !u!1 &264696895
 GameObject:
   m_ObjectHideFlags: 0
@@ -520,18 +500,6 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 937611773608330965, guid: 6170c56a7c94aa246acdc81f55abbd3f, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.159705
-      objectReference: {fileID: 0}
-    - target: {fileID: 937611773608330965, guid: 6170c56a7c94aa246acdc81f55abbd3f, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.159705
-      objectReference: {fileID: 0}
-    - target: {fileID: 937611773608330965, guid: 6170c56a7c94aa246acdc81f55abbd3f, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.159705
-      objectReference: {fileID: 0}
-    - target: {fileID: 937611773608330965, guid: 6170c56a7c94aa246acdc81f55abbd3f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -571,17 +539,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4137384834340001054, guid: 6170c56a7c94aa246acdc81f55abbd3f, type: 3}
-      propertyPath: m_UseGravity
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5115359028499713802, guid: 6170c56a7c94aa246acdc81f55abbd3f, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6626253530693957429, guid: 6170c56a7c94aa246acdc81f55abbd3f, type: 3}
-      propertyPath: moveSpeed
-      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7096754723007873075, guid: 6170c56a7c94aa246acdc81f55abbd3f, type: 3}
       propertyPath: m_Name
@@ -644,6 +604,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 8661643638882088968, guid: be5a5d483b6e48b488c5d0b2b047e1ec, type: 3}
+      propertyPath: playerInfo
+      value: 
+      objectReference: {fileID: 2043961239}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be5a5d483b6e48b488c5d0b2b047e1ec, type: 3}
 --- !u!1 &1300976937
