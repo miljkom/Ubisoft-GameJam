@@ -14,12 +14,14 @@ public class GameManager : MonoBehaviour
 
     public Player playerInfo;
     public List<Root> rootInfo = new List<Root>();
+    public List<Plant> plants = new List<Plant>();
     public bool gameOver = false;
     private GameManager()
     {
         instance = this;
         playerInfo = new Player();
         rootInfo = new List<Root>();
+        plants = new List<Plant>();
     }
 
     private void Start()
@@ -80,5 +82,6 @@ public class GameManager : MonoBehaviour
     public void SectorWithIndexCleared(int indexOfSector)
     {
         RootInit(indexOfSector);
+        plants[indexOfSector].plantState = Plant.WaterState.Second;
     }
 }
