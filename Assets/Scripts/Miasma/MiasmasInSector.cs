@@ -29,7 +29,7 @@ public class MiasmasInSector : MonoBehaviour
         Debug.LogError((float)miasmasDestroyed / miasmasInSector.Count);
         if ((float)miasmasDestroyed / miasmasInSector.Count >= percentTillSectorClean / 100)
         {
-            //GameManager.Instance.SectorWithIndexCleared(indexOfSector);
+            GameManager.Instance.SectorWithIndexCleared(indexOfSector);
             foreach (var miasma in miasmasInSector)
             {
                 miasma.SectorCleared = true;

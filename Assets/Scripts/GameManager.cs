@@ -54,6 +54,6 @@ public class GameManager : MonoBehaviour
 
     public void SectorWithIndexCleared(int indexOfSector)
     {
-        throw new NotImplementedException();
+        Debug.LogError("Miljko ubaci me!!!");
     }
 }
