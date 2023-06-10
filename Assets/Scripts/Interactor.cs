@@ -10,18 +10,41 @@ public class Interactor : MonoBehaviour
     [SerializeField] private float _interactionPointRadius = 0.5f;
     [SerializeField] private LayerMask _interactableMask;
     private readonly Collider[] _colliders = new Collider[3];
-    [SerializeField] private int _numFound;
+    [SerializeField] private int numFound;
+    [SerializeField] private InteractionPromptUI interactionPromptUI;
+
+    private IInteractable interactable;
     private void Update()
     {
-        _numFound = Physics.OverlapSphereNonAlloc(_interactionPoint.position, _interactionPointRadius, _colliders,
+        numFound = Physics.OverlapSphereNonAlloc(_interactionPoint.position, _interactionPointRadius, _colliders,
             _interactableMask);
-        if (_numFound > 0)
+        if (numFound > 0)
         {
-            var interactable = _colliders[0].GetComponent<IInteractable>();
+             interactable = _colliders[0].GetComponent<IInteractable>();
 
-            if (interactable != null && Keyboard.current.spaceKey.wasPressedThisFrame)
+            if (interactable != null)
             {
-                interactable.Interact(this);
+                if (!interactionPromptUI.isDisplayed)
+                {
+                    interactionPromptUI.SetUp(interactable.InteractionPrompt);
+                }
+
+                if (Keyboard.current.fKey.wasPressedThisFrame)
+                {
+                    interactable.Interact(this);
+                }
+            }
+        }
+        else
+        {
+            if (interactable != null)
+            {
+                interactable = null;
+            }
+
+            if (interactionPromptUI.isDisplayed)
+            {
+                interactionPromptUI.Close();
             }
         }
         
