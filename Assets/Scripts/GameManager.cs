@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     }
 
     public Player playerInfo;
+    public bool gameOver = false;
     private GameManager()
     {
         instance = this;
@@ -22,13 +23,32 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         playerInfo.battery = 100;
-        playerInfo.corrosion = 100;
+        playerInfo.corrosion = 0;
         playerInfo.water = 100;
+        playerInfo.seed = 1;
     }
 
     public void RefillResources()
     {
-        playerInfo.battery -= 5f;
-        playerInfo.corrosion -= 5f;
+        if (playerInfo.battery < 100)
+        { 
+            playerInfo.battery += 0.5f;
+        }
     }
+    public void LoseBattery()
+    {
+        if (playerInfo.battery > 0)
+        { 
+            playerInfo.battery -= 0.5f;
+        }
+        else
+        {
+            gameOver = true;
+        }
+    }
+
+    public void AddCorrosion()
+    {
+        playerInfo.corrosion += 0.66f;
+    } 
 }
