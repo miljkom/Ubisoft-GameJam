@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Plant : MonoBehaviour, IInteractable
 {
-    [SerializeField] private string _prompt;
+    [SerializeField] private Sprite _prompt;
     public WaterState plantState;
-    public string InteractionPrompt => _prompt;
+    public Sprite InteractionPrompt => _prompt;
     public bool Interact(Interactor interactor)
     {
         if (GameManager.Instance.playerInfo.seed > 0)

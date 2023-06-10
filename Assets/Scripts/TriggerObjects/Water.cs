@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Water : MonoBehaviour,IInteractable
 {
-    [SerializeField] private string _prompt;
-    public string InteractionPrompt => _prompt;
+    [SerializeField] private Sprite _prompt;
+    public Sprite InteractionPrompt => _prompt;
     public bool Interact(Interactor interactor)
     {
         if (GameManager.Instance.playerInfo.water < 3)
