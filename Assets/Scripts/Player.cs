@@ -6,6 +6,6 @@ public class Player : MonoBehaviour
 {
     public float battery;
     public float corrosion;
-    public float water;
+    public int water;
     public int seed;
 }
