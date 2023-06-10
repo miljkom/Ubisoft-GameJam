@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
         playerInfo.battery = 100;
         playerInfo.corrosion = 100;
         playerInfo.water = 100;
+        playerInfo.seed = 1;
     }
 
     public void RefillResources()
