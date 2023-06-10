@@ -46,6 +46,9 @@ TagManager:
   - name: Map
     uniqueID: 2554335471
     locked: 0
+  - name: MapAssets
+    uniqueID: 398027041
+    locked: 0
   - name: Robot
     uniqueID: 2088495437
     locked: 0
