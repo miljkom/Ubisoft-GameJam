@@ -88,7 +88,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 770996262246370783}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 6, z: 0}
+  m_LocalPosition: {x: 0, y: 5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -582,7 +582,7 @@ GameObject:
   - component: {fileID: 3774483398748385049}
   m_Layer: 0
   m_Name: Robot
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -637,10 +637,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f21200563ef5b0643b27600a243bd1d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  battery: 100
+  battery: 0
   corrosion: 0
-  water: 100
-  seed: 1
+  water: 0
+  seed: 0
 --- !u!114 &6626253530693957429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -668,7 +668,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactionPoint: {fileID: 3101660387362475014}
-  _interactionPointRadius: 1
+  _interactionPointRadius: 1.5
   _interactableMask:
     serializedVersion: 2
     m_Bits: 64
@@ -687,7 +687,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!135 &6782758055680101084
 SphereCollider:

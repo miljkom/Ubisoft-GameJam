@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour
     {
         playerInfo.battery = 100;
         playerInfo.corrosion = 0;
-        playerInfo.water = 100;
+        playerInfo.water = 3;
         playerInfo.seed = 1;
     }
 
@@ -58,6 +58,7 @@ public class GameManager : MonoBehaviour
         else
         {
             gameOver = true;
+            Debug.LogError("KRAJ");
         }
     }
 
