@@ -72,4 +72,9 @@ public class GameManager : MonoBehaviour
     {
         playerInfo.corrosion += 0.66f;
     }
+
+    public void SectorWithIndexCleared(int indexOfSector)
+    {
+        Debug.LogError("Miljko ubaci me!!!");
+    }
 }
