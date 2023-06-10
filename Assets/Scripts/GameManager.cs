@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     }
 
     public Player playerInfo;
-    public List<Root> rootInfo;
+    public List<Root> rootInfo = new List<Root>();
     public bool gameOver = false;
     private GameManager()
     {
@@ -37,8 +37,7 @@ public class GameManager : MonoBehaviour
 
     private void RootInit(int index)
     {
-        rootInfo[index].health = 100;
-        rootInfo[index].timer = 60;
+        rootInfo.Add(new Root(100, 60));
         playerInfo.seed++;
     }
 
@@ -65,6 +64,17 @@ public class GameManager : MonoBehaviour
     public void AddCorrosion()
     {
         playerInfo.corrosion += 0.66f;
+        if (playerInfo.corrosion >= 100)
+        {
+            gameOver = true;
+            GameOver();
+        }
+           
+    }
+
+    private void GameOver()
+    {
+        throw new NotImplementedException();
     }
 
     public void SectorWithIndexCleared(int indexOfSector)
