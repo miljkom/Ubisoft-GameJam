@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     }
 
     public Player playerInfo;
+    public bool gameOver = false;
     private GameManager()
     {
         instance = this;
@@ -28,7 +29,20 @@ public class GameManager : MonoBehaviour
 
     public void RefillResources()
     {
-        playerInfo.battery -= 5f;
-        playerInfo.corrosion -= 5f;
+        if (playerInfo.battery < 100)
+        { 
+            playerInfo.battery += 0.5f;
+        }
+    }
+    public void LoseBattery()
+    {
+        if (playerInfo.battery > 0)
+        { 
+            playerInfo.battery -= 0.5f;
+        }
+        else
+        {
+            gameOver = true;
+        }
     }
 }

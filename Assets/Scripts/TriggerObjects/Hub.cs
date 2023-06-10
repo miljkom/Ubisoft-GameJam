@@ -20,6 +20,7 @@ public class Hub : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             isInside = false;
+            StartCoroutine(PlayExited());
         }
     }
 
@@ -32,5 +33,15 @@ public class Hub : MonoBehaviour
             yield break;
         }
         StartCoroutine(PlayerEntered());
+    }
+    private IEnumerator PlayExited()
+    {
+        GameManager.Instance.LoseBattery();
+        yield return new WaitForSeconds(1f);
+        if (isInside)
+        {
+            yield break;
+        }
+        StartCoroutine(PlayExited());
     }
 }
