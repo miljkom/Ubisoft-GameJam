@@ -1,6 +1,4 @@
-using System;
 using UnityEngine;
-using UnityEngine.PlayerLoop;
 
 public class RespawningMiasma : MonoBehaviour
 {
@@ -11,7 +9,6 @@ public class RespawningMiasma : MonoBehaviour
     private bool _isDestroyed;
     private float _elapsedTimeInSeconds = 0f;
     private Material _material;
-    //private bool _destroyedStarted;
     private float _destroyInSeconds = 0;
     private float startingFloat = 0f;
     private float destroyingFloat = 1f;
@@ -37,9 +34,9 @@ public class RespawningMiasma : MonoBehaviour
 
         if (_destroyedStarted)
         {
-            _destroyInSeconds += Time.deltaTime;
+            _destroyInSeconds += Time.deltaTime * 1;
             _material.SetFloat("_DissolveValue", 
-                Mathf.Lerp(startingFloat, destroyingFloat, _destroyInSeconds + Time.deltaTime));
+                Mathf.Lerp(startingFloat, destroyingFloat, _destroyInSeconds));
             if (_destroyInSeconds >= 1)
             {
                 _destroyedStarted = false;
@@ -50,9 +47,9 @@ public class RespawningMiasma : MonoBehaviour
 
         if (_respawnMiasma)
         {
-            _destroyInSeconds -= Time.deltaTime;
+            _destroyInSeconds -= Time.deltaTime * 1;
             _material.SetFloat("_DissolveValue", 
-                Mathf.Lerp(startingFloat, destroyingFloat, _destroyInSeconds - Time.deltaTime));
+                Mathf.Lerp(startingFloat, destroyingFloat, _destroyInSeconds));
             if (_destroyInSeconds <= 0)
             {
                 _isDestroyed = false;
@@ -65,6 +62,7 @@ public class RespawningMiasma : MonoBehaviour
     public void DestroyMiasma()
     {
         if(_isDestroyed || _destroyedStarted) return;
+        GameManager.Instance.AddCorrosion();
         _destroyedStarted = true;
         _destroyInSeconds = 0f;
     }

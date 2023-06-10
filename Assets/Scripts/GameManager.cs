@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         playerInfo.battery = 100;
-        playerInfo.corrosion = 100;
+        playerInfo.corrosion = 0;
         playerInfo.water = 100;
         playerInfo.seed = 1;
     }
@@ -46,4 +46,9 @@ public class GameManager : MonoBehaviour
             gameOver = true;
         }
     }
+
+    public void AddCorrosion()
+    {
+        playerInfo.corrosion += 0.66f;
+    } 
 }

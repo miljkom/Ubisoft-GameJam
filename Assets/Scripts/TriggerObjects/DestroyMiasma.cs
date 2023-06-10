@@ -6,5 +6,8 @@ public class DestroyMiasma : MonoBehaviour
     {
         if (other.CompareTag("Miasma"))
             other.transform.parent.GetComponent<RespawningMiasma>().DestroyMiasma();
+
+        if (other.CompareTag("Enemy"))
+            Destroy(other.gameObject);
     }
 }
