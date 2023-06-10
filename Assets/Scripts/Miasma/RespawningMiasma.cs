@@ -1,18 +1,21 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class RespawningMiasma : MonoBehaviour
 {
     [SerializeField] private float timerTillSpawningAgain;
     [SerializeField] private GameObject miasmaRenderer;
+    
+    [HideInInspector] public bool IsDestroyed;
+    [HideInInspector] public bool DestroyedStarted;
     [HideInInspector] public bool SectorCleared;
-
-    private bool _isDestroyed;
+    
     private float _elapsedTimeInSeconds = 0f;
     private Material _material;
     private float _destroyInSeconds = 0;
     private float startingFloat = 0f;
     private float destroyingFloat = 1f;
-    private bool _destroyedStarted;
+
     private bool _respawnMiasma;
 
     private void Awake()
@@ -22,7 +25,7 @@ public class RespawningMiasma : MonoBehaviour
 
     private void Update()
     {
-        if (_isDestroyed && !SectorCleared)
+        if (IsDestroyed && !SectorCleared)
         {
             _elapsedTimeInSeconds += Time.deltaTime;
             if (timerTillSpawningAgain <= _elapsedTimeInSeconds)
@@ -32,16 +35,17 @@ public class RespawningMiasma : MonoBehaviour
             }
         }
 
-        if (_destroyedStarted)
+        if (DestroyedStarted)
         {
             _destroyInSeconds += Time.deltaTime * 1;
             _material.SetFloat("_DissolveValue", 
                 Mathf.Lerp(startingFloat, destroyingFloat, _destroyInSeconds));
-            if (_destroyInSeconds >= 1)
+            if (_destroyInSeconds >= 1 && !SectorCleared)
             {
-                _destroyedStarted = false;
-                _isDestroyed = true;
+                DestroyedStarted = false;
+                IsDestroyed = true;
                 _elapsedTimeInSeconds = 0;
+                MiasmasInSector.MiasmasDestroyed?.Invoke();
             }
         }
 
@@ -52,7 +56,7 @@ public class RespawningMiasma : MonoBehaviour
                 Mathf.Lerp(startingFloat, destroyingFloat, _destroyInSeconds));
             if (_destroyInSeconds <= 0)
             {
-                _isDestroyed = false;
+                IsDestroyed = false;
                 _elapsedTimeInSeconds = 0;
                 _respawnMiasma = false;
             }
@@ -61,9 +65,10 @@ public class RespawningMiasma : MonoBehaviour
 
     public void DestroyMiasma()
     {
-        if(_isDestroyed || _destroyedStarted) return;
+        if(IsDestroyed || DestroyedStarted) return;
         GameManager.Instance.AddCorrosion();
-        _destroyedStarted = true;
+        DestroyedStarted = true;
         _destroyInSeconds = 0f;
     }
+    
 }

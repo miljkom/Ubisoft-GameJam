@@ -50,5 +50,10 @@ public class GameManager : MonoBehaviour
     public void AddCorrosion()
     {
         playerInfo.corrosion += 0.66f;
-    } 
+    }
+
+    public void SectorWithIndexCleared(int indexOfSector)
+    {
+        throw new NotImplementedException();
+    }
 }
