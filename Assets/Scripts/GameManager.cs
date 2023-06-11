@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
     public Player playerInfo;
     public List<Root> rootInfo = new List<Root>();
     public List<Plant> plants = new List<Plant>();
+    public List<GameObject> rootObjects = new List<GameObject>();
     public bool gameOver = false;
     [SerializeField] public Image waterIcon;
     [SerializeField] public Image batteryIcon;
@@ -30,7 +31,6 @@ public class GameManager : MonoBehaviour
     [SerializeField] public List<Sprite> sunStates;
     [SerializeField] public GameObject corrosionBar;
     [SerializeField] public GameObject healthBar;
-    [SerializeField] public GameObject sectorBar;
     [SerializeField] public Hub hub;
     [SerializeField] public Sprite waterIconQuest;
     [SerializeField] public Sprite plantIconQuest;
@@ -51,22 +51,13 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         PlayerInit();
-        sectorIncreased += IncreaseSectorBar;
         healthBarImage = healthBar.GetComponent<Image>();
-        sectorBarImage = sectorBar.GetComponent<Image>();
         corrosionBarImage = corrosionBar.GetComponent<Image>();
         _quests = Quests.quests;
     }
 
-    public static UnityAction<float> sectorIncreased;
-    private void IncreaseSectorBar(float fillAmount)
-    {
-        sectorBarImage.fillAmount = fillAmount;
-    }
-
     public Image corrosionBarImage;
     public Image healthBarImage;
-    public Image sectorBarImage;
     private void PlayerInit()
     {
         playerInfo.battery = 100;
@@ -79,9 +70,6 @@ public class GameManager : MonoBehaviour
         sunIcon.sprite = sunStates[1];
         corrosionBar.GetComponent<Image>().fillAmount = 0;
         healthBar.GetComponent<Image>().fillAmount = 0;
-        sectorBar.SetActive(true);
-        healthBar.SetActive(false);
-        sectorBar.GetComponent<Image>().fillAmount = 0;
     }
 
     private void Update()
@@ -106,6 +94,9 @@ public class GameManager : MonoBehaviour
     {
         rootInfo.Add(new Root(100, 30));
         StartCoroutine(timerRoot(rootInfo[index], index));
+        rootObjects[index].SetActive(true);
+        
+        healthBar.GetComponent<Image>().fillAmount = 100;
         playerInfo.seed++;
         seedIcon.sprite = seedStates[1];
     }

@@ -48,7 +48,6 @@ public class RespawningMiasma : MonoBehaviour
                 DestroyedStarted = false;
                 IsDestroyed = true;
                 _elapsedTimeInSeconds = 0;
-                GameManager.sectorIncreased?.Invoke(0.66f);
                 miasmasInSector.CheckIsSectorClean();
                 if (isPurple)
                     miasmasInSector.CheckIfAllPurpleDestroyed();
