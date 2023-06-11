@@ -82,7 +82,6 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         corrosionBarImage.fillAmount = playerInfo.corrosion/100;
-        
     }
     
 
@@ -139,6 +138,7 @@ public class GameManager : MonoBehaviour
     {
         Quests.quests.RemoveAt(0);
         questText.text = Quests.quests[0];
+        questsCompleted++;
     }
 
     public void FirstMiasmaDestroyed()

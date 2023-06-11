@@ -9,8 +9,6 @@ public class MiasmasInSector : MonoBehaviour
     [SerializeField] private float percentTillSectorClean;
     [SerializeField] private int indexOfSector;
 
-    public static Action MiasmasDestroyed;
-
     public void CheckIsSectorClean()
     {
         if(indexOfSector == 0)
