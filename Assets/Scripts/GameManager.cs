@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
@@ -29,6 +30,11 @@ public class GameManager : MonoBehaviour
     [SerializeField] public GameObject corrosionBar;
     [SerializeField] public GameObject healthBar;
     [SerializeField] public GameObject sectorBar;
+    public int questsCompleted;
+    [SerializeField] private TextMeshProUGUI questText;
+
+    private bool _firstMiasmaDestroyed = false;
+    private List<string> _quests;
     private GameManager()
     {
         instance = this;
@@ -44,6 +50,7 @@ public class GameManager : MonoBehaviour
         healthBarImage = healthBar.GetComponent<Image>();
         sectorBarImage = sectorBar.GetComponent<Image>();
         corrosionBarImage = corrosionBar.GetComponent<Image>();
+        _quests = Quests.quests;
     }
 
     public static UnityAction<float> sectorIncreased;
@@ -75,7 +82,6 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         corrosionBarImage.fillAmount = playerInfo.corrosion/100;
-        
     }
     
 
@@ -125,6 +131,37 @@ public class GameManager : MonoBehaviour
     public void SectorWithIndexCleared(int indexOfSector)
     {
         RootInit(indexOfSector);
-        plants[indexOfSector].plantState = Plant.WaterState.Second;
+        //plants[indexOfSector].plantState = Plant.WaterState.Second;
+    }
+
+    public void StartNewQuest()
+    {
+        Quests.quests.RemoveAt(0);
+        questText.text = Quests.quests[0];
+        questsCompleted++;
+    }
+
+    public void FirstMiasmaDestroyed()
+    {
+        if(!_firstMiasmaDestroyed && questsCompleted == 0)
+            StartNewQuest();
+    }
+
+    public void PurpleMiasmaDestroyed()
+    {
+        if(!_firstMiasmaDestroyed && questsCompleted == 1)
+            StartNewQuest();
+    }
+
+    public void WaterIconShowed()
+    {
+        if (questsCompleted == 2)
+            StartNewQuest();
+    }
+
+    public void WaterCollected()
+    {
+        if (questsCompleted == 3)
+            StartNewQuest();
     }
 }

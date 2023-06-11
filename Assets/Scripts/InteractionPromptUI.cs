@@ -21,6 +21,10 @@ public class InteractionPromptUI : MonoBehaviour
     public void SetUp(Sprite spriteIcon)
     {
         uiPanel.GetComponent<Image>().sprite = spriteIcon;
+        if (spriteIcon == GameManager.Instance.waterIcon.sprite)
+        {
+            GameManager.Instance.WaterIconShowed();
+        }
         framePanel.SetActive(true);
         uiPanel.SetActive(true);
         isDisplayed = true;

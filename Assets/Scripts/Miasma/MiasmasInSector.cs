@@ -9,15 +9,10 @@ public class MiasmasInSector : MonoBehaviour
     [SerializeField] private float percentTillSectorClean;
     [SerializeField] private int indexOfSector;
 
-    public static Action MiasmasDestroyed;
-
-    private void Awake()
+    public void CheckIsSectorClean()
     {
-        MiasmasDestroyed += CheckIsSectorClean;
-    }
-
-    private void CheckIsSectorClean()
-    {
+        if(indexOfSector == 0)
+            GameManager.Instance.FirstMiasmaDestroyed();
         var miasmasActive = 0;
         var miasmasDestroyed = 0;
         foreach (var miasma in miasmasInSector)
@@ -37,7 +32,18 @@ public class MiasmasInSector : MonoBehaviour
                 GameManager.Instance.sunIcon.sprite = GameManager.Instance.sunStates[0];
             }
         }
-
     }
 
+    public void CheckIfAllPurpleDestroyed()
+    {
+        if (indexOfSector == 0)
+        {
+            foreach (var miasma in miasmasInSector)
+            {
+                if (miasma.isPurple == true && !miasma.IsDestroyed)
+                    return;
+            }
+            GameManager.Instance.PurpleMiasmaDestroyed();
+        }
+    }
 }
