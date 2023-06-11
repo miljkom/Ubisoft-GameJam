@@ -111,9 +111,11 @@ public class GameManager : MonoBehaviour
     public void RefillResources()
     {
         if (playerInfo.battery < 100)
-        { 
+        {
             playerInfo.battery += 0.5f;
         }
+        else
+            CompleteQuest(6);
     }
     public void LoseBattery()
     {

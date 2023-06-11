@@ -27,6 +27,7 @@ public class Hub : MonoBehaviour
 
     private IEnumerator PlayerEntered()
     {
+        if (GameManager.Instance.questsCompleted < 5) yield break;
         GameManager.Instance.RefillResources();
         yield return new WaitForSeconds(0.1f);
         if (!isInside)
