@@ -3,14 +3,16 @@ using UnityEngine.Serialization;
 
 public class RespawningMiasma : MonoBehaviour
 {
+    public bool isPurple;
+    
     [SerializeField] private float timerTillSpawningAgain;
     [SerializeField] private GameObject miasmaRenderer;
     [SerializeField] private MiasmasInSector miasmasInSector;
-    
+
     [HideInInspector] public bool IsDestroyed;
     [HideInInspector] public bool DestroyedStarted;
     [HideInInspector] public bool SectorCleared;
-    
+
     private float _elapsedTimeInSeconds = 0f;
     private Material _material;
     private float _destroyInSeconds = 0;
@@ -48,6 +50,8 @@ public class RespawningMiasma : MonoBehaviour
                 _elapsedTimeInSeconds = 0;
                 GameManager.sectorIncreased?.Invoke(0.66f);
                 miasmasInSector.CheckIsSectorClean();
+                if (isPurple)
+                    miasmasInSector.CheckIfAllPurpleDestroyed();
             }
         }
 

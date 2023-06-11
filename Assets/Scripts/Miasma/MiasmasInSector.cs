@@ -34,4 +34,16 @@ public class MiasmasInSector : MonoBehaviour
         }
     }
 
+    public void CheckIfAllPurpleDestroyed()
+    {
+        if (indexOfSector == 0)
+        {
+            foreach (var miasma in miasmasInSector)
+            {
+                if (miasma.isPurple == true && !miasma.IsDestroyed)
+                    return;
+            }
+            GameManager.Instance.PurpleMiasmaDestroyed();
+        }
+    }
 }

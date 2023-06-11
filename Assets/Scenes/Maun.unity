@@ -1895,6 +1895,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2091644011}
     - target: {fileID: 6503494369401737423, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: isPurple
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6503494369401737423, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 1840131138}
@@ -2019,6 +2023,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2071412882}
     - target: {fileID: 6503494369879208490, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: isPurple
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6503494369879208490, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 1840131138}
@@ -2030,6 +2038,10 @@ PrefabInstance:
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 2091644011}
+    - target: {fileID: 6503494369890583256, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: isPurple
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6503494369890583256, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: miasmasInSector
       value: 
@@ -2050,6 +2062,10 @@ PrefabInstance:
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 1840131138}
+    - target: {fileID: 6503494369989678103, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: isPurple
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6503494369989678103, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: miasmasInSector
       value: 
@@ -2247,6 +2263,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2091644011}
     - target: {fileID: 6503494370773779165, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: isPurple
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6503494370773779165, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 1840131138}
@@ -2402,6 +2422,10 @@ PrefabInstance:
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 2071412882}
+    - target: {fileID: 6503494371287885941, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: isPurple
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6503494371287885941, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: miasmasInSector
       value: 

@@ -6,8 +6,7 @@ public static class Quests
     {
         "Clear miasma in Sector 1",
         "Clear path to healthy soil",
-        "Clear miasma over the river",
-        "Siphon the water from the river",
+        "Siphon water from the river",
         "Press F to interact with the river",
         "Plant a seed",
         "Water the plant",

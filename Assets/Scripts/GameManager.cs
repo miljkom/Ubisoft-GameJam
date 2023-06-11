@@ -146,4 +146,10 @@ public class GameManager : MonoBehaviour
         if(!_firstMiasmaDestroyed && questsCompleted == 0)
             StartNewQuest();
     }
+
+    public void PurpleMiasmaDestroyed()
+    {
+        if(!_firstMiasmaDestroyed && questsCompleted == 1)
+            StartNewQuest();
+    }
 }
