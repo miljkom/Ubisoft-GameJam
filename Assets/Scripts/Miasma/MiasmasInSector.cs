@@ -21,7 +21,8 @@ public class MiasmasInSector : MonoBehaviour
                 miasmasDestroyed++;
             else miasmasActive++;
         }
-
+        if(GameManager.Instance.questsCompleted < 6) return;
+        
         if ((float)miasmasDestroyed / miasmasInSector.Count >= percentTillSectorClean / 100)
         {
             GameManager.Instance.SectorWithIndexCleared(indexOfSector);

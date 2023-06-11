@@ -15,6 +15,7 @@ public class Plant : MonoBehaviour, IInteractable
         if (GameManager.Instance.playerInfo.seed > 0)
         {
             Debug.LogError("Interaction with plant");
+            GameManager.Instance.CompleteQuest(4);
             GameManager.Instance.playerInfo.seed--;
             GameManager.Instance.plants.Add(this);
             GameManager.Instance.seedIcon.sprite = GameManager.Instance.seedStates[0];
@@ -29,7 +30,7 @@ public class Plant : MonoBehaviour, IInteractable
 
     public bool CanInteract(Interactor interactor)
     {
-        return GameManager.Instance.playerInfo.seed > 0;
+        return GameManager.Instance.playerInfo.seed > 0 && GameManager.Instance.playerInfo.water > 0;
     }
 
     public enum WaterState

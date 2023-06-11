@@ -69,11 +69,11 @@ public class GameManager : MonoBehaviour
     {
         playerInfo.battery = 100;
         playerInfo.corrosion = 0;
-        playerInfo.water = 1;
+        playerInfo.water = 0;
         playerInfo.seed = 1;
         batteryIcon.sprite = batteryStates[2];
         seedIcon.sprite = seedStates[1];
-        waterIcon.sprite = waterStates[1];
+        waterIcon.sprite = waterStates[0];
         sunIcon.sprite = sunStates[1];
         corrosionBar.GetComponent<Image>().fillAmount = 0;
         healthBar.GetComponent<Image>().fillAmount = 0;
@@ -151,6 +151,9 @@ public class GameManager : MonoBehaviour
         plants[indexOfSector].plant0.SetActive(false);
         plants[indexOfSector].plant1.SetActive(false);
         plants[indexOfSector].plant2.SetActive(true);
+        //plants[indexOfSector].plantState = Plant.WaterState.Second;
+        if(questsCompleted == 7)
+            StartNewQuest();
     }
 
     private IEnumerator timerRoot(Root root,int index)
@@ -188,12 +191,21 @@ public class GameManager : MonoBehaviour
     public void WaterIconShowed()
     {
         if (questsCompleted == 2)
+        {
             StartNewQuest();
+            playerInfo.battery--;
+        }
     }
 
     public void WaterCollected()
     {
         if (questsCompleted == 3)
+            StartNewQuest();
+    }
+
+    public void CompleteQuest(int indexOfQuest)
+    {
+        if(questsCompleted == indexOfQuest)
             StartNewQuest();
     }
 }
