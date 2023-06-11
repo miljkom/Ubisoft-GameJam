@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3692233088534797499}
   - component: {fileID: -2636462719910269668}
   - component: {fileID: 838075608145929280}
+  - component: {fileID: 2745864644702067549}
   m_Layer: 6
   m_Name: Plant
   m_TagString: Untagged
@@ -67,6 +68,19 @@ MonoBehaviour:
   plant1: {fileID: 3692233089948353120}
   plant2: {fileID: 3692233090324557140}
   plantState: 0
+--- !u!114 &2745864644702067549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3692233088534797498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baa475ec149d97648bb6228684fa2a38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _prompt: {fileID: 21300000, guid: b393179567c9b1044b048b749f3c5b81, type: 3}
 --- !u!1 &3692233089907501403
 GameObject:
   m_ObjectHideFlags: 0

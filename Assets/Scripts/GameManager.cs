@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -30,6 +31,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] public GameObject corrosionBar;
     [SerializeField] public GameObject healthBar;
     [SerializeField] public GameObject sectorBar;
+    [SerializeField] public Hub hub;
     [SerializeField] public Sprite waterIconQuest;
     public int questsCompleted;
     [SerializeField] private TextMeshProUGUI questText;
@@ -67,11 +69,11 @@ public class GameManager : MonoBehaviour
     {
         playerInfo.battery = 100;
         playerInfo.corrosion = 0;
-        playerInfo.water = 1;
+        playerInfo.water = 0;
         playerInfo.seed = 1;
         batteryIcon.sprite = batteryStates[2];
         seedIcon.sprite = seedStates[1];
-        waterIcon.sprite = waterStates[1];
+        waterIcon.sprite = waterStates[0];
         sunIcon.sprite = sunStates[1];
         corrosionBar.GetComponent<Image>().fillAmount = 0;
         healthBar.GetComponent<Image>().fillAmount = 0;
@@ -83,12 +85,25 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         corrosionBarImage.fillAmount = playerInfo.corrosion/100;
+        if (playerInfo.battery > 66f)
+        {
+            batteryIcon.sprite = batteryStates[2];
+        }
+        else if (playerInfo.battery is < 66f and > 33f)
+        {
+            batteryIcon.sprite = batteryStates[1];
+        }
+        else if (playerInfo.battery == 0)
+        {
+            batteryIcon.sprite = batteryStates[0];
+        }
     }
     
 
     private void RootInit(int index)
     {
-        rootInfo.Add(new Root(100, 60));
+        rootInfo.Add(new Root(100, 30));
+        StartCoroutine(timerRoot(rootInfo[index], index));
         playerInfo.seed++;
         seedIcon.sprite = seedStates[1];
     }
@@ -96,9 +111,11 @@ public class GameManager : MonoBehaviour
     public void RefillResources()
     {
         if (playerInfo.battery < 100)
-        { 
+        {
             playerInfo.battery += 0.5f;
         }
+        else
+            CompleteQuest(6);
     }
     public void LoseBattery()
     {
@@ -136,6 +153,22 @@ public class GameManager : MonoBehaviour
         plants[indexOfSector].plant0.SetActive(false);
         plants[indexOfSector].plant1.SetActive(false);
         plants[indexOfSector].plant2.SetActive(true);
+        //plants[indexOfSector].plantState = Plant.WaterState.Second;
+        if(questsCompleted == 7)
+            StartNewQuest();
+    }
+
+    private IEnumerator timerRoot(Root root,int index)
+    {
+        root.timer--;
+        if (root.timer == 0)
+        {
+            hub.hubs[index].SetActive(false);
+            hub.hubs[index+1].SetActive(true);
+            yield break;
+        }
+        yield return new WaitForSeconds(1f);
+        StartCoroutine(timerRoot(root,index));
     }
 
     public void StartNewQuest()
@@ -160,12 +193,21 @@ public class GameManager : MonoBehaviour
     public void WaterIconShowed()
     {
         if (questsCompleted == 2)
+        {
             StartNewQuest();
+            playerInfo.battery--;
+        }
     }
 
     public void WaterCollected()
     {
         if (questsCompleted == 3)
+            StartNewQuest();
+    }
+
+    public void CompleteQuest(int indexOfQuest)
+    {
+        if(questsCompleted == indexOfQuest)
             StartNewQuest();
     }
 }

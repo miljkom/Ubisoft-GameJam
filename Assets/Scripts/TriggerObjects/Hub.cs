@@ -6,6 +6,7 @@ using UnityEngine;
 public class Hub : MonoBehaviour
 {
     private bool isInside = false;
+    [SerializeField] public List<GameObject> hubs;
     private void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Player"))
@@ -26,6 +27,7 @@ public class Hub : MonoBehaviour
 
     private IEnumerator PlayerEntered()
     {
+        if (GameManager.Instance.questsCompleted < 5) yield break;
         GameManager.Instance.RefillResources();
         yield return new WaitForSeconds(0.1f);
         if (!isInside)
@@ -36,6 +38,7 @@ public class Hub : MonoBehaviour
     }
     private IEnumerator PlayExited()
     {
+        if (GameManager.Instance.playerInfo.battery < 6) yield break;
         GameManager.Instance.LoseBattery();
         yield return new WaitForSeconds(1f);
         if (isInside)
