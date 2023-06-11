@@ -5,6 +5,7 @@ public class RespawningMiasma : MonoBehaviour
 {
     [SerializeField] private float timerTillSpawningAgain;
     [SerializeField] private GameObject miasmaRenderer;
+    [SerializeField] private MiasmasInSector miasmasInSector;
     
     [HideInInspector] public bool IsDestroyed;
     [HideInInspector] public bool DestroyedStarted;
@@ -45,8 +46,8 @@ public class RespawningMiasma : MonoBehaviour
                 DestroyedStarted = false;
                 IsDestroyed = true;
                 _elapsedTimeInSeconds = 0;
-                MiasmasInSector.MiasmasDestroyed?.Invoke();
                 GameManager.sectorIncreased?.Invoke(0.66f);
+                miasmasInSector.CheckIsSectorClean();
             }
         }
 

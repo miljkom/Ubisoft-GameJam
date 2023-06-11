@@ -4054,6 +4054,9 @@ PrefabInstance:
       propertyPath: batteryStates.Array.data[2]
       value: 
       objectReference: {fileID: 21300000, guid: 73f131ac0d85cb14db6a6d4e38086cee, type: 3}
+      propertyPath: questText
+      value: 
+      objectReference: {fileID: 1077642403}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be5a5d483b6e48b488c5d0b2b047e1ec, type: 3}
 --- !u!1001 &1021472624
@@ -4949,6 +4952,7 @@ RectTransform:
   m_Children:
   - {fileID: 294667047}
   - {fileID: 2043559027}
+  - {fileID: 1077642402}
   m_Father: {fileID: 701083299}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7424,7 +7428,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
