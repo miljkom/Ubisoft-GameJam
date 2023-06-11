@@ -141,15 +141,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Biljke_Progres_4
+      name: Plant2
       rect:
         serializedVersion: 2
-        x: 715
+        x: 718
         y: 1487
         width: 367
         height: 468
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -162,15 +162,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Biljke_Progres_6
+      name: Plant1
       rect:
         serializedVersion: 2
         x: 498
         y: 1648
         width: 213
         height: 332
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -191,7 +191,7 @@ TextureImporter:
         width: 91
         height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -212,7 +212,7 @@ TextureImporter:
         width: 135
         height: 214
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -225,15 +225,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Biljke_Progres_26
+      name: PlacePlant
       rect:
         serializedVersion: 2
-        x: 191
+        x: 192
         y: 1560
         width: 191
         height: 78
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -246,7 +246,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Biljke_Progres_27
+      name: KanisterUlja
       rect:
         serializedVersion: 2
         x: 1143
@@ -254,7 +254,7 @@ TextureImporter:
         width: 72
         height: 93
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -267,15 +267,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Biljke_Progres_30
+      name: Hub1
       rect:
         serializedVersion: 2
         x: 256
         y: 493
         width: 482
         height: 914
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.023993094}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -288,15 +288,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Biljke_Progres_31
+      name: Hub2
       rect:
         serializedVersion: 2
-        x: 804
+        x: 801
         y: 472
         width: 615
         height: 986
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.04112618}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -338,20 +338,20 @@ TextureImporter:
       Biljke_Progres_23: -981900859
       Biljke_Progres_24: 1965650021
       Biljke_Progres_25: -1719569036
-      Biljke_Progres_26: 1590532549
-      Biljke_Progres_27: -376547519
       Biljke_Progres_28: -954642718
       Biljke_Progres_29: 943159261
       Biljke_Progres_3: 817593728
-      Biljke_Progres_30: -1801575983
-      Biljke_Progres_31: -1314220170
       Biljke_Progres_32: -688827542
-      Biljke_Progres_4: -1701314628
       Biljke_Progres_5: -964208041
-      Biljke_Progres_6: -1658214538
       Biljke_Progres_7: -1732778255
       Biljke_Progres_8: -1333207967
       Biljke_Progres_9: 1838057792
+      Hub1: -1801575983
+      Hub2: -1314220170
+      KanisterUlja: -376547519
+      PlacePlant: 1590532549
+      Plant1: -1658214538
+      Plant2: -1701314628
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
