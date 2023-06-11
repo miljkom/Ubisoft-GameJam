@@ -10,10 +10,11 @@ public class WateringPlant : MonoBehaviour,IInteractable
     {
         if (GameManager.Instance.playerInfo.water > 0)
         {
-            if (GameManager.Instance.questsCompleted <= 1) return false;
+            if (GameManager.Instance.questsCompleted <= 4) return false;
             Debug.LogError("Interaction with wateringPlant");
             GameManager.Instance.playerInfo.water--;
             GameManager.Instance.waterIcon.sprite = GameManager.Instance.waterStates[GameManager.Instance.playerInfo.water];
+            GameManager.Instance.CompleteQuest(5);
             //TODO nesto nemam pojma
             return true;
         }

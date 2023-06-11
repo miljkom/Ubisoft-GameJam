@@ -39,6 +39,7 @@ public class GameManager : MonoBehaviour
 
     private bool _firstMiasmaDestroyed = false;
     private List<string> _quests;
+    private bool _secondSecondCleared;
     private GameManager()
     {
         instance = this;
@@ -116,8 +117,21 @@ public class GameManager : MonoBehaviour
             playerInfo.battery += 0.5f;
         }
         else
+        {
             CompleteQuest(6);
+            CompleteQuest8AndSpawnEnemies();
+        }
     }
+
+    private void CompleteQuest8AndSpawnEnemies()
+    {
+        if (questsCompleted == 8)
+        {
+            StartNewQuest();
+            FindObjectOfType<SpawnEnemiesOnFirstRoot>().SpawnEnemies();
+        }
+    }
+
     public void LoseBattery()
     {
         if (playerInfo.battery > 0)
@@ -196,7 +210,7 @@ public class GameManager : MonoBehaviour
         if (questsCompleted == 2)
         {
             StartNewQuest();
-            playerInfo.battery--;
+            playerInfo.battery -= 33f;
         }
     }
 
@@ -210,5 +224,11 @@ public class GameManager : MonoBehaviour
     {
         if(questsCompleted == indexOfQuest)
             StartNewQuest();
+    }
+
+    public void SecondSectorCleared()
+    {
+        FindObjectOfType<SpawnEnemiesOnFirstRoot>().SpawnEnemies();
+        FindObjectOfType<SpawnEnemiesOnSecondRoot>().SpawnEnemies();
     }
 }
