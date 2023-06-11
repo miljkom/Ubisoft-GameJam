@@ -6,6 +6,7 @@ using UnityEngine;
 public class Hub : MonoBehaviour
 {
     private bool isInside = false;
+    [SerializeField] public List<GameObject> hubs;
     private void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Player"))
