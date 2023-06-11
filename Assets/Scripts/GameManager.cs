@@ -36,6 +36,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] public Sprite plantIconQuest;
     public int questsCompleted;
     [SerializeField] private TextMeshProUGUI questText;
+    [SerializeField] private List<GameObject> fires;
 
     private bool _firstMiasmaDestroyed = false;
     private List<string> _quests;
@@ -54,6 +55,14 @@ public class GameManager : MonoBehaviour
         healthBarImage = healthBar.GetComponent<Image>();
         corrosionBarImage = corrosionBar.GetComponent<Image>();
         _quests = Quests.quests;
+    }
+
+    public void StartFire()
+    {
+        foreach (var fire in fires)
+        {
+            fire.SetActive(true);
+        }
     }
 
     public Image corrosionBarImage;
@@ -235,6 +244,7 @@ public class GameManager : MonoBehaviour
             StartNewQuest();
     }
 
+    
     public void CompleteQuest(int indexOfQuest)
     {
         if(questsCompleted == indexOfQuest)
