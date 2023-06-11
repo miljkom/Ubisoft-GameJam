@@ -28427,6 +28427,10 @@ PrefabInstance:
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 41802327}
+    - target: {fileID: 6503494369396459979, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: timerTillSpawningAgain
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6503494369401737423, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: isPurple
       value: 1
@@ -28447,6 +28451,10 @@ PrefabInstance:
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 41802327}
+    - target: {fileID: 6503494369419828731, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: timerTillSpawningAgain
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6503494369424893658, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: miasmasInSector
       value: 
@@ -28463,6 +28471,10 @@ PrefabInstance:
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 41802327}
+    - target: {fileID: 6503494369469011753, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: timerTillSpawningAgain
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6503494369471378829, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: miasmasInSector
       value: 
@@ -28503,6 +28515,10 @@ PrefabInstance:
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 41802327}
+    - target: {fileID: 6503494369593718713, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: timerTillSpawningAgain
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6503494369600008873, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: miasmasInSector
       value: 
@@ -28527,6 +28543,10 @@ PrefabInstance:
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 41802327}
+    - target: {fileID: 6503494369683793223, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: timerTillSpawningAgain
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6503494369717639686, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: miasmasInSector
       value: 
@@ -28535,22 +28555,42 @@ PrefabInstance:
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 41802327}
+    - target: {fileID: 6503494369753809518, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: timerTillSpawningAgain
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6503494369776028302, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 41802327}
+    - target: {fileID: 6503494369776028302, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: timerTillSpawningAgain
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6503494369776954732, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 41802327}
+    - target: {fileID: 6503494369776954732, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: timerTillSpawningAgain
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6503494369797843852, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 41802327}
+    - target: {fileID: 6503494369797843852, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: timerTillSpawningAgain
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6503494369802836402, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 41802327}
+    - target: {fileID: 6503494369802836402, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: timerTillSpawningAgain
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6503494369808522042, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: miasmasInSector
       value: 
@@ -28571,6 +28611,10 @@ PrefabInstance:
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 41802327}
+    - target: {fileID: 6503494369862176442, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: timerTillSpawningAgain
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6503494369862458163, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: miasmasInSector
       value: 
@@ -28611,6 +28655,10 @@ PrefabInstance:
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 41802327}
+    - target: {fileID: 6503494369888690443, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: timerTillSpawningAgain
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6503494369890583256, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: isPurple
       value: 1
@@ -28643,6 +28691,10 @@ PrefabInstance:
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 41802327}
+    - target: {fileID: 6503494369974750036, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: timerTillSpawningAgain
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6503494369984889048, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: miasmasInSector
       value: 
@@ -28675,6 +28727,10 @@ PrefabInstance:
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 41802327}
+    - target: {fileID: 6503494370022243325, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: timerTillSpawningAgain
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6503494370026627902, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: miasmasInSector
       value: 
@@ -28687,10 +28743,18 @@ PrefabInstance:
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 41802327}
+    - target: {fileID: 6503494370027197909, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: timerTillSpawningAgain
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6503494370050553221, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 41802327}
+    - target: {fileID: 6503494370050553221, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: timerTillSpawningAgain
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6503494370061754814, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: miasmasInSector
       value: 
@@ -28719,6 +28783,10 @@ PrefabInstance:
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 41802327}
+    - target: {fileID: 6503494370121968200, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: timerTillSpawningAgain
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6503494370152227330, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: miasmasInSector
       value: 
@@ -28779,10 +28847,18 @@ PrefabInstance:
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 41802327}
+    - target: {fileID: 6503494370262739934, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: timerTillSpawningAgain
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6503494370269616516, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 41802327}
+    - target: {fileID: 6503494370269616516, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: timerTillSpawningAgain
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6503494370272992384, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: miasmasInSector
       value: 
@@ -28799,10 +28875,18 @@ PrefabInstance:
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 41802327}
+    - target: {fileID: 6503494370328698392, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: timerTillSpawningAgain
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6503494370356488914, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 41802327}
+    - target: {fileID: 6503494370356488914, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: timerTillSpawningAgain
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6503494370379632734, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: miasmasInSector
       value: 
@@ -28827,6 +28911,10 @@ PrefabInstance:
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 41802327}
+    - target: {fileID: 6503494370407363299, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: timerTillSpawningAgain
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6503494370417971526, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: miasmasInSector
       value: 
@@ -28835,6 +28923,10 @@ PrefabInstance:
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 41802327}
+    - target: {fileID: 6503494370433573160, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: timerTillSpawningAgain
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6503494370453526936, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: miasmasInSector
       value: 
@@ -28851,14 +28943,26 @@ PrefabInstance:
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 41802327}
+    - target: {fileID: 6503494370462831962, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: timerTillSpawningAgain
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6503494370502976957, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 41802327}
+    - target: {fileID: 6503494370502976957, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: timerTillSpawningAgain
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6503494370527181920, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 41802327}
+    - target: {fileID: 6503494370527181920, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: timerTillSpawningAgain
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6503494370528651783, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: miasmasInSector
       value: 
@@ -28879,6 +28983,10 @@ PrefabInstance:
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 41802327}
+    - target: {fileID: 6503494370584837661, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: timerTillSpawningAgain
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6503494370590452343, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: miasmasInSector
       value: 
@@ -28891,6 +28999,10 @@ PrefabInstance:
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 41802327}
+    - target: {fileID: 6503494370606450509, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: timerTillSpawningAgain
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6503494370639330481, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: miasmasInSector
       value: 
@@ -28907,10 +29019,18 @@ PrefabInstance:
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 41802327}
+    - target: {fileID: 6503494370676216471, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: timerTillSpawningAgain
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6503494370680156853, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 41802327}
+    - target: {fileID: 6503494370680156853, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: timerTillSpawningAgain
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6503494370706061976, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: miasmasInSector
       value: 
@@ -28927,6 +29047,10 @@ PrefabInstance:
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 41802327}
+    - target: {fileID: 6503494370755160878, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: timerTillSpawningAgain
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6503494370773779165, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: isPurple
       value: 1
@@ -28959,6 +29083,10 @@ PrefabInstance:
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 41802327}
+    - target: {fileID: 6503494370836172708, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: timerTillSpawningAgain
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6503494370838711745, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: miasmasInSector
       value: 
@@ -28995,10 +29123,18 @@ PrefabInstance:
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 41802327}
+    - target: {fileID: 6503494370887972762, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: timerTillSpawningAgain
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6503494370889627099, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 41802327}
+    - target: {fileID: 6503494370889627099, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: timerTillSpawningAgain
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6503494370890758132, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: miasmasInSector
       value: 
@@ -29015,14 +29151,26 @@ PrefabInstance:
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 41802327}
+    - target: {fileID: 6503494370905176292, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: timerTillSpawningAgain
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6503494370915484148, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 41802327}
+    - target: {fileID: 6503494370915484148, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: timerTillSpawningAgain
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6503494370941556171, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 41802327}
+    - target: {fileID: 6503494370941556171, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: timerTillSpawningAgain
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6503494370974612104, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: miasmasInSector
       value: 
@@ -29055,10 +29203,18 @@ PrefabInstance:
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 41802327}
+    - target: {fileID: 6503494371097237236, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: timerTillSpawningAgain
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6503494371123945022, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 41802327}
+    - target: {fileID: 6503494371123945022, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: timerTillSpawningAgain
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6503494371136938630, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: miasmasInSector
       value: 
@@ -29067,6 +29223,10 @@ PrefabInstance:
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 41802327}
+    - target: {fileID: 6503494371154451777, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: timerTillSpawningAgain
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6503494371154596446, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: miasmasInSector
       value: 
@@ -29091,18 +29251,34 @@ PrefabInstance:
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 41802327}
+    - target: {fileID: 6503494371173112635, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: timerTillSpawningAgain
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6503494371185117249, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 41802327}
+    - target: {fileID: 6503494371185117249, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: timerTillSpawningAgain
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6503494371216658742, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 41802327}
+    - target: {fileID: 6503494371216658742, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: timerTillSpawningAgain
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6503494371227744373, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 41802327}
+    - target: {fileID: 6503494371227744373, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: timerTillSpawningAgain
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6503494371239722694, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: miasmasInSector
       value: 
@@ -29115,10 +29291,18 @@ PrefabInstance:
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 41802327}
+    - target: {fileID: 6503494371241737983, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: timerTillSpawningAgain
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6503494371262678332, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 41802327}
+    - target: {fileID: 6503494371262678332, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: timerTillSpawningAgain
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6503494371269812845, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: miasmasInSector
       value: 
@@ -29183,10 +29367,18 @@ PrefabInstance:
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 41802327}
+    - target: {fileID: 6503494371407381408, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: timerTillSpawningAgain
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6503494371432134586, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
       propertyPath: miasmasInSector
       value: 
       objectReference: {fileID: 41802327}
+    - target: {fileID: 6503494371432134586, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
+      propertyPath: timerTillSpawningAgain
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
 --- !u!1 &1497040100
@@ -29727,8 +29919,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7.1, y: -78.5}
-  m_SizeDelta: {x: 832.9572, y: 56}
+  m_AnchoredPosition: {x: -17, y: -125}
+  m_SizeDelta: {x: 836.5, y: 57.94}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1546889693
 MonoBehaviour:
@@ -29777,8 +29969,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -29813,7 +30005,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -0.00012207031, y: 0, z: 0, w: 0}
+  m_margin: {x: -90.02942, y: 0, z: -84.53125, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

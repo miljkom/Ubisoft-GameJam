@@ -30,7 +30,7 @@ public class Fire : MonoBehaviour, IInteractable
                 _destroyInSeconds += Time.deltaTime * 0.01f;
                 _material.SetFloat("_DissolveValue",
                     Mathf.Lerp(startingFloat, destroyingFloat, _destroyInSeconds));
-                
+                Destroy(gameObject);
             }
             
             //TODO nesto nemam pojma
