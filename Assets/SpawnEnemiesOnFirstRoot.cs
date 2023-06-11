@@ -27,5 +27,6 @@ public class SpawnEnemiesOnFirstRoot : MonoBehaviour
                 return;
         }
         GameManager.Instance.CompleteQuest(9);
+        GameManager.turnOffCorutine = true;
     }
 }

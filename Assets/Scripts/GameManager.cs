@@ -87,15 +87,19 @@ public class GameManager : MonoBehaviour
         {
             batteryIcon.sprite = batteryStates[0];
         }
+
+        if (questsCompleted > 8)
+        {
+            healthBar.GetComponent<Image>().fillAmount = rootInfo[0].health;
+        }
     }
     
 
     private void RootInit(int index)
     {
-        rootInfo.Add(new Root(100, 30));
+        rootInfo.Add(new Root(100, 5));
         StartCoroutine(timerRoot(rootInfo[index], index));
         rootObjects[index].SetActive(true);
-        
         healthBar.GetComponent<Image>().fillAmount = 100;
         playerInfo.seed++;
         seedIcon.sprite = seedStates[1];
@@ -120,7 +124,26 @@ public class GameManager : MonoBehaviour
         {
             StartNewQuest();
             FindObjectOfType<SpawnEnemiesOnFirstRoot>().SpawnEnemies();
+            StartCoroutine(LoseHealthFirst());
         }
+    }
+
+    public static bool turnOffCorutine = false;
+    public IEnumerator LoseHealthFirst()
+    {
+        rootInfo[0].health -= 1;
+        if (turnOffCorutine)
+            yield break;
+        yield return new WaitForSeconds(1f);
+        StartCoroutine(LoseHealthFirst());
+    }
+    public IEnumerator LoseHealthSecond()
+    {
+        rootInfo[0].health -= 1;
+        rootInfo[1].health -= 1;
+        //TODO prekini korutinu
+        yield return new WaitForSeconds(1f);
+        StartCoroutine(LoseHealthSecond());
     }
 
     public void LoseBattery()
@@ -176,6 +199,7 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
         StartCoroutine(timerRoot(root,index));
     }
+    
 
     public void StartNewQuest()
     {
