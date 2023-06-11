@@ -54,6 +54,8 @@ public class GameManager : MonoBehaviour
         healthBarImage = healthBar.GetComponent<Image>();
         corrosionBarImage = corrosionBar.GetComponent<Image>();
         _quests = Quests.quests;
+        FindObjectOfType<SpawnEnemiesOnFirstRoot>().SpawnEnemies();
+        FindObjectOfType<SpawnEnemiesOnSecondRoot>().SpawnEnemies();
     }
 
     public Image corrosionBarImage;

@@ -10,6 +10,7 @@ public class EnemyMovement : MonoBehaviour
     {
         _shouldMove = true;
         _moveTo = playerPosition;
+        Invoke("DestroyObject",1f);
     }
 
     private void Update()
@@ -19,5 +20,10 @@ public class EnemyMovement : MonoBehaviour
             transform.LookAt(_moveTo);
             transform.position -= transform.forward;
         }
+    }
+
+    private void DestroyObject()
+    {
+        Destroy(gameObject);
     }
 }
