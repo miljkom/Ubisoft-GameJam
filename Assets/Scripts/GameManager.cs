@@ -152,4 +152,16 @@ public class GameManager : MonoBehaviour
         if(!_firstMiasmaDestroyed && questsCompleted == 1)
             StartNewQuest();
     }
+
+    public void WaterIconShowed()
+    {
+        if (questsCompleted == 2)
+            StartNewQuest();
+    }
+
+    public void WaterCollected()
+    {
+        if (questsCompleted == 3)
+            StartNewQuest();
+    }
 }

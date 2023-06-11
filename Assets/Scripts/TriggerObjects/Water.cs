@@ -13,6 +13,7 @@ public class Water : MonoBehaviour,IInteractable
             Debug.LogError("Interaction with water");
             GameManager.Instance.playerInfo.water = 3;
             GameManager.Instance.waterIcon.sprite = GameManager.Instance.waterStates[3];
+            GameManager.Instance.WaterCollected();
             //TODO nesto nemam pojma
             return true;
         }
