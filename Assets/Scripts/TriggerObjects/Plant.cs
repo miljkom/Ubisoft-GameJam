@@ -5,6 +5,9 @@ using UnityEngine;
 public class Plant : MonoBehaviour, IInteractable
 {
     [SerializeField] private Sprite _prompt;
+    [SerializeField] public GameObject plant0;
+    [SerializeField] public GameObject plant1;
+    [SerializeField] public GameObject plant2;
     public WaterState plantState;
     public Sprite InteractionPrompt => _prompt;
     public bool Interact(Interactor interactor)
@@ -15,6 +18,7 @@ public class Plant : MonoBehaviour, IInteractable
             GameManager.Instance.playerInfo.seed--;
             GameManager.Instance.plants.Add(this);
             GameManager.Instance.seedIcon.sprite = GameManager.Instance.seedStates[0];
+            plant1.SetActive(true);
             plantState = WaterState.First;
             //TODO nesto nemam pojma
             return true;

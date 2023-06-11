@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] public GameObject corrosionBar;
     [SerializeField] public GameObject healthBar;
     [SerializeField] public GameObject sectorBar;
+    [SerializeField] public Sprite waterIconQuest;
     public int questsCompleted;
     [SerializeField] private TextMeshProUGUI questText;
 
@@ -131,7 +132,10 @@ public class GameManager : MonoBehaviour
     public void SectorWithIndexCleared(int indexOfSector)
     {
         RootInit(indexOfSector);
-        //plants[indexOfSector].plantState = Plant.WaterState.Second;
+        plants[indexOfSector].plantState = Plant.WaterState.Second;
+        plants[indexOfSector].plant0.SetActive(false);
+        plants[indexOfSector].plant1.SetActive(false);
+        plants[indexOfSector].plant2.SetActive(true);
     }
 
     public void StartNewQuest()

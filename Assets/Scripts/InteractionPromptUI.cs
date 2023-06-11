@@ -21,7 +21,7 @@ public class InteractionPromptUI : MonoBehaviour
     public void SetUp(Sprite spriteIcon)
     {
         uiPanel.GetComponent<Image>().sprite = spriteIcon;
-        if (spriteIcon == GameManager.Instance.waterIcon.sprite)
+        if (spriteIcon == GameManager.Instance.waterIconQuest)
         {
             GameManager.Instance.WaterIconShowed();
         }
