@@ -6,4 +6,5 @@ public interface IInteractable
 {    
      public Sprite InteractionPrompt { get; }
      public bool Interact(Interactor interactor);
+     public bool CanInteract(Interactor interactor);
 }

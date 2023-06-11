@@ -48,3 +48,6 @@ MonoBehaviour:
   rootInfo: []
   plants: []
   gameOver: 0
+  waterIcon: {fileID: 0}
+  batteryIcon: {fileID: 0}
+  seedIcon: {fileID: 0}

@@ -24,7 +24,7 @@ public class Interactor : MonoBehaviour
 
             if (interactable != null)
             {
-                if (!interactionPromptUI.isDisplayed)
+                if (!interactionPromptUI.isDisplayed && interactable.CanInteract(this))
                 {
                     interactionPromptUI.SetUp(interactable.InteractionPrompt);
                 }

@@ -46,6 +46,7 @@ public class RespawningMiasma : MonoBehaviour
                 IsDestroyed = true;
                 _elapsedTimeInSeconds = 0;
                 MiasmasInSector.MiasmasDestroyed?.Invoke();
+                GameManager.sectorIncreased?.Invoke(0.66f);
             }
         }
 

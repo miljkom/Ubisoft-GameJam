@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -16,6 +18,17 @@ public class GameManager : MonoBehaviour
     public List<Root> rootInfo = new List<Root>();
     public List<Plant> plants = new List<Plant>();
     public bool gameOver = false;
+    [SerializeField] public Image waterIcon;
+    [SerializeField] public Image batteryIcon;
+    [SerializeField] public Image seedIcon;
+    [SerializeField] public Image sunIcon;
+    [SerializeField] public List<Sprite> waterStates;
+    [SerializeField] public List<Sprite> batteryStates;
+    [SerializeField] public List<Sprite> seedStates;
+    [SerializeField] public List<Sprite> sunStates;
+    [SerializeField] public GameObject corrosionBar;
+    [SerializeField] public GameObject healthBar;
+    [SerializeField] public GameObject sectorBar;
     private GameManager()
     {
         instance = this;
@@ -27,20 +40,50 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         PlayerInit();
+        sectorIncreased += IncreaseSectorBar;
+        healthBarImage = healthBar.GetComponent<Image>();
+        sectorBarImage = sectorBar.GetComponent<Image>();
+        corrosionBarImage = corrosionBar.GetComponent<Image>();
     }
 
+    public static UnityAction<float> sectorIncreased;
+    private void IncreaseSectorBar(float fillAmount)
+    {
+        sectorBarImage.fillAmount = fillAmount;
+    }
+
+    public Image corrosionBarImage;
+    public Image healthBarImage;
+    public Image sectorBarImage;
     private void PlayerInit()
     {
         playerInfo.battery = 100;
         playerInfo.corrosion = 0;
-        playerInfo.water = 3;
+        playerInfo.water = 1;
         playerInfo.seed = 1;
+        batteryIcon.sprite = batteryStates[2];
+        seedIcon.sprite = seedStates[1];
+        waterIcon.sprite = waterStates[1];
+        sunIcon.sprite = sunStates[1];
+        corrosionBar.GetComponent<Image>().fillAmount = 0;
+        healthBar.GetComponent<Image>().fillAmount = 0;
+        sectorBar.SetActive(true);
+        healthBar.SetActive(false);
+        sectorBar.GetComponent<Image>().fillAmount = 0;
     }
+
+    private void Update()
+    {
+        corrosionBarImage.fillAmount = playerInfo.corrosion/100;
+        
+    }
+    
 
     private void RootInit(int index)
     {
         rootInfo.Add(new Root(100, 60));
         playerInfo.seed++;
+        seedIcon.sprite = seedStates[1];
     }
 
     public void RefillResources()

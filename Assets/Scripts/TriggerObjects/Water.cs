@@ -12,11 +12,17 @@ public class Water : MonoBehaviour,IInteractable
         {
             Debug.LogError("Interaction with water");
             GameManager.Instance.playerInfo.water = 3;
+            GameManager.Instance.waterIcon.sprite = GameManager.Instance.waterStates[3];
             //TODO nesto nemam pojma
             return true;
         }
         Debug.LogError("Full tank");
         return false;
+    }
+
+    public bool CanInteract(Interactor interactor)
+    {
+        return GameManager.Instance.playerInfo.water < 3;
     }
     
 }

@@ -876,7 +876,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   battery: 100
-  corrosion: 0
+  corrosion: 14.519999
   water: 3
   seed: 1
 --- !u!114 &6626253530693957429
@@ -906,7 +906,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactionPoint: {fileID: 3101660387362475014}
-  _interactionPointRadius: 1.5
+  _interactionPointRadius: 3
   _interactableMask:
     serializedVersion: 2
     m_Bits: 64

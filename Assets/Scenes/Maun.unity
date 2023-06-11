@@ -3986,6 +3986,74 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 8661643638882088968, guid: be5a5d483b6e48b488c5d0b2b047e1ec, type: 3}
+      propertyPath: seedIcon
+      value: 
+      objectReference: {fileID: 1355226669}
+    - target: {fileID: 8661643638882088968, guid: be5a5d483b6e48b488c5d0b2b047e1ec, type: 3}
+      propertyPath: waterIcon
+      value: 
+      objectReference: {fileID: 751517919}
+    - target: {fileID: 8661643638882088968, guid: be5a5d483b6e48b488c5d0b2b047e1ec, type: 3}
+      propertyPath: batteryIcon
+      value: 
+      objectReference: {fileID: 619631772}
+    - target: {fileID: 8661643638882088968, guid: be5a5d483b6e48b488c5d0b2b047e1ec, type: 3}
+      propertyPath: sunStates.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8661643638882088968, guid: be5a5d483b6e48b488c5d0b2b047e1ec, type: 3}
+      propertyPath: seedStates.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8661643638882088968, guid: be5a5d483b6e48b488c5d0b2b047e1ec, type: 3}
+      propertyPath: waterStates.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8661643638882088968, guid: be5a5d483b6e48b488c5d0b2b047e1ec, type: 3}
+      propertyPath: sunStates.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 98557c8516c251f489994a05df1fd96c, type: 3}
+    - target: {fileID: 8661643638882088968, guid: be5a5d483b6e48b488c5d0b2b047e1ec, type: 3}
+      propertyPath: sunStates.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: e624d4dbc34118a4c9cba2ceaaea61f7, type: 3}
+    - target: {fileID: 8661643638882088968, guid: be5a5d483b6e48b488c5d0b2b047e1ec, type: 3}
+      propertyPath: batteryStates.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8661643638882088968, guid: be5a5d483b6e48b488c5d0b2b047e1ec, type: 3}
+      propertyPath: seedStates.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 188216c5a1407c449b2d31b41ddf5f39, type: 3}
+    - target: {fileID: 8661643638882088968, guid: be5a5d483b6e48b488c5d0b2b047e1ec, type: 3}
+      propertyPath: seedStates.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 6cf374e2edf8f714bb0e3897c40d21ae, type: 3}
+    - target: {fileID: 8661643638882088968, guid: be5a5d483b6e48b488c5d0b2b047e1ec, type: 3}
+      propertyPath: waterStates.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: ee33c4d0e1ea28246b5111b76bc6b023, type: 3}
+    - target: {fileID: 8661643638882088968, guid: be5a5d483b6e48b488c5d0b2b047e1ec, type: 3}
+      propertyPath: waterStates.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 5ee36bea40c7f6e4abc3fff1f3b2d208, type: 3}
+    - target: {fileID: 8661643638882088968, guid: be5a5d483b6e48b488c5d0b2b047e1ec, type: 3}
+      propertyPath: waterStates.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: 2a98c394dbd1c194cab72c06544d4d8b, type: 3}
+    - target: {fileID: 8661643638882088968, guid: be5a5d483b6e48b488c5d0b2b047e1ec, type: 3}
+      propertyPath: batteryStates.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 62381a12f1aed96429d680f33356f3cf, type: 3}
+    - target: {fileID: 8661643638882088968, guid: be5a5d483b6e48b488c5d0b2b047e1ec, type: 3}
+      propertyPath: batteryStates.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 67ffe509666199d49afdf31240a5df11, type: 3}
+    - target: {fileID: 8661643638882088968, guid: be5a5d483b6e48b488c5d0b2b047e1ec, type: 3}
+      propertyPath: batteryStates.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: 73f131ac0d85cb14db6a6d4e38086cee, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be5a5d483b6e48b488c5d0b2b047e1ec, type: 3}
 --- !u!1001 &1021472624
@@ -6792,6 +6860,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3144891432875856768, guid: 9046de81a0e31ec4786952b0db639894, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3144891434012378288, guid: 9046de81a0e31ec4786952b0db639894, type: 3}
       propertyPath: m_Name
       value: RiverColliders

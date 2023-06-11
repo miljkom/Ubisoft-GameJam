@@ -12,11 +12,17 @@ public class Fire : MonoBehaviour, IInteractable
         {
             Debug.LogError("Interaction with fire");
             GameManager.Instance.playerInfo.water -= 3;
+            GameManager.Instance.waterIcon.sprite = GameManager.Instance.waterStates[0];
             
             //TODO nesto nemam pojma
             return true;
         }
         Debug.LogError("Not enough water");
         return false;
+    }
+
+    public bool CanInteract(Interactor interactor)
+    {
+        return GameManager.Instance.playerInfo.water == 3;
     }
 }

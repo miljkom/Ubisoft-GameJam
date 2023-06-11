@@ -34,10 +34,10 @@ public class MiasmasInSector : MonoBehaviour
             {
                 miasma.SectorCleared = true;
                 miasma.DestroyedStarted = true;
+                GameManager.Instance.sunIcon.sprite = GameManager.Instance.sunStates[0];
             }
         }
-            
 
     }
-    
+
 }
