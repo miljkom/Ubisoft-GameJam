@@ -15,7 +15,7 @@ public class StripAnimation : MonoBehaviour
     {
         if(!check) {
             //TODO: UCITAJ SCENU ZA GAME OVDE
-            SceneManager.LoadScene("Maun");
+            SceneManager.LoadScene("SampleScene");
             check=true;
         }
     }
