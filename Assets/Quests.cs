@@ -16,16 +16,6 @@ public static class Quests
         "Vacuum sector 1 so miasma doesn’t spread",
         "Recharge battery at the hub",
         "Parasites are attacking sector 1",
-        "Scare off the parasites",
-        "Vacuum miasma in Sector 2 and plant a seed",
-        //11
-        //brate ilija kako si ovo mislio
-        "Use oil to decrease corrosion level, don’t rust away",
-        "Water the plant",
-        "Vacuum sector 2 so miasma doesn’t spread",
-        "Parasites are attacking sector 1 and sector 2",
-        "Vacuum miasma in Sector 3 and plant a seed",
-        "Wildfire in Sector 1 and 2",
-        "Vacuum miasma in Sector 3 and plant a seed"
+        "Clear all sectors and plant trees",
     };
 }
