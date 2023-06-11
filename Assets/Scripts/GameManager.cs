@@ -170,7 +170,7 @@ public class GameManager : MonoBehaviour
 
     public void AddCorrosion()
     {
-        playerInfo.corrosion += 0.66f;
+        playerInfo.corrosion += 0.22f;
         if (playerInfo.corrosion >= 100)
         {
             gameOver = true;
