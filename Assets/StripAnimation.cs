@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class StripAnimation : MonoBehaviour
 {
@@ -8,15 +9,16 @@ public class StripAnimation : MonoBehaviour
     void Update()
     {
         if(Input.anyKey)
-        LoadGameScene();
+            LoadGameScene();
     }
     public void LoadGameScene()
     {
         if(!check) {
             //TODO: UCITAJ SCENU ZA GAME OVDE
-            Debug.Log("Sledeca Scena");
+            SceneManager.LoadScene("SampleScene");
             check=true;
         }
-
     }
+    
+    
 }
