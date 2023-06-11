@@ -72,6 +72,7 @@ MonoBehaviour:
   sectorBar: {fileID: 0}
   hub: {fileID: 0}
   waterIconQuest: {fileID: 21300000, guid: 598a2b6d3a1e67e408b4998bb0e83438, type: 3}
+  plantIconQuest: {fileID: 21300000, guid: d757450d19c97d44ba8bb94949e37f90, type: 3}
   questsCompleted: 0
   questText: {fileID: 0}
   corrosionBarImage: {fileID: 0}

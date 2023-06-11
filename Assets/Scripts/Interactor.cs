@@ -43,6 +43,9 @@ public class Interactor : MonoBehaviour
                 if (Keyboard.current.fKey.wasPressedThisFrame)
                 {
                     interactable.Interact(this);
+                    if (interactable.InteractionPrompt == GameManager.Instance.plantIconQuest)
+                        _colliders[0].gameObject.SetActive(false);
+
                 }
             }
         }

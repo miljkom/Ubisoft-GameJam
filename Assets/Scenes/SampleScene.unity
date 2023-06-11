@@ -20088,6 +20088,10 @@ PrefabInstance:
       propertyPath: corrosionBar
       value: 
       objectReference: {fileID: 168254674}
+    - target: {fileID: 8661643638882088968, guid: be5a5d483b6e48b488c5d0b2b047e1ec, type: 3}
+      propertyPath: plantIconQuest
+      value: 
+      objectReference: {fileID: 21300000, guid: d757450d19c97d44ba8bb94949e37f90, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be5a5d483b6e48b488c5d0b2b047e1ec, type: 3}
 --- !u!1 &1045054911
@@ -21207,6 +21211,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 290646504483336472, guid: 7f57e660db1ebaa44b9009de98d2eb2e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3692233088534797498, guid: 7f57e660db1ebaa44b9009de98d2eb2e, type: 3}
       propertyPath: m_Name
       value: Plant

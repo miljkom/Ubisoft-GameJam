@@ -33,6 +33,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] public GameObject sectorBar;
     [SerializeField] public Hub hub;
     [SerializeField] public Sprite waterIconQuest;
+    [SerializeField] public Sprite plantIconQuest;
     public int questsCompleted;
     [SerializeField] private TextMeshProUGUI questText;
 
