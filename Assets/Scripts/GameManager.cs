@@ -54,8 +54,6 @@ public class GameManager : MonoBehaviour
         healthBarImage = healthBar.GetComponent<Image>();
         corrosionBarImage = corrosionBar.GetComponent<Image>();
         _quests = Quests.quests;
-        FindObjectOfType<SpawnEnemiesOnFirstRoot>().SpawnEnemies();
-        FindObjectOfType<SpawnEnemiesOnSecondRoot>().SpawnEnemies();
     }
 
     public Image corrosionBarImage;
@@ -107,7 +105,7 @@ public class GameManager : MonoBehaviour
     {
         if (playerInfo.battery < 100)
         {
-            playerInfo.battery += 0.5f;
+            playerInfo.battery += 8f;
         }
         else
         {
