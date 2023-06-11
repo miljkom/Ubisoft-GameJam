@@ -23,6 +23,6 @@ public class WateringPlant : MonoBehaviour,IInteractable
 
     public bool CanInteract(Interactor interactor)
     {
-        return GameManager.Instance.playerInfo.water > 0 && GameManager.Instance.questsCompleted > 3;
+        return GameManager.Instance.playerInfo.water > 0 && GameManager.Instance.questsCompleted > 4;
     }
 }

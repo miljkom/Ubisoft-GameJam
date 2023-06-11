@@ -20,13 +20,24 @@ public class Interactor : MonoBehaviour
             _interactableMask);
         if (numFound > 0)
         {
-             interactable = _colliders[0].GetComponent<IInteractable>();
-
+            interactable = _colliders[0].GetComponent<IInteractable>();
+            
             if (interactable != null)
             {
                 if (!interactionPromptUI.isDisplayed && interactable.CanInteract(this))
                 {
                     interactionPromptUI.SetUp(interactable.InteractionPrompt);
+                }
+                else
+                {
+                    if (_colliders.Length == 2)
+                    {
+                        interactable = _colliders[1].GetComponent<IInteractable>();
+                        if (!interactionPromptUI.isDisplayed && interactable.CanInteract(this))
+                        {
+                            interactionPromptUI.SetUp(interactable.InteractionPrompt);
+                        }
+                    }
                 }
 
                 if (Keyboard.current.fKey.wasPressedThisFrame)

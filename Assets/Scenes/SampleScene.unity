@@ -1903,7 +1903,9 @@ GameObject:
   - component: {fileID: 359565042}
   - component: {fileID: 359565044}
   - component: {fileID: 359565043}
-  m_Layer: 0
+  - component: {fileID: 359565045}
+  - component: {fileID: 359565046}
+  m_Layer: 6
   m_Name: FIre (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6704,6 +6706,32 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!65 &359565045
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 359565041}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3, y: 3, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &359565046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 359565041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 496f1fc082758ac49b61b7d009bc6f1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _prompt: {fileID: 21300000, guid: b393179567c9b1044b048b749f3c5b81, type: 3}
 --- !u!1001 &361591683
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7418,7 +7446,9 @@ GameObject:
   - component: {fileID: 526271889}
   - component: {fileID: 526271891}
   - component: {fileID: 526271890}
-  m_Layer: 0
+  - component: {fileID: 526271892}
+  - component: {fileID: 526271893}
+  m_Layer: 6
   m_Name: FIre (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12219,6 +12249,32 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!65 &526271892
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 526271888}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3, y: 3, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &526271893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 526271888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 496f1fc082758ac49b61b7d009bc6f1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _prompt: {fileID: 21300000, guid: b393179567c9b1044b048b749f3c5b81, type: 3}
 --- !u!1 &528042554
 GameObject:
   m_ObjectHideFlags: 0
@@ -12727,7 +12783,9 @@ GameObject:
   - component: {fileID: 581834105}
   - component: {fileID: 581834107}
   - component: {fileID: 581834106}
-  m_Layer: 0
+  - component: {fileID: 581834108}
+  - component: {fileID: 581834109}
+  m_Layer: 6
   m_Name: FIre (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12742,7 +12800,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 581834104}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -6.62, y: -2.2, z: 27.65}
+  m_LocalPosition: {x: -6.619999, y: -2.2, z: 27.649998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17528,6 +17586,32 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!65 &581834108
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 581834104}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3, y: 3, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &581834109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 581834104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 496f1fc082758ac49b61b7d009bc6f1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _prompt: {fileID: 21300000, guid: b393179567c9b1044b048b749f3c5b81, type: 3}
 --- !u!1001 &589184549
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17824,7 +17908,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &662000537
 Transform:
   m_ObjectHideFlags: 0
@@ -20326,7 +20410,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 937611773608330965, guid: 4a3fef0e7ed8cbe4eb40332127d20aee, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 8.24
       objectReference: {fileID: 0}
     - target: {fileID: 937611773608330965, guid: 4a3fef0e7ed8cbe4eb40332127d20aee, type: 3}
       propertyPath: m_LocalPosition.y
@@ -20334,7 +20418,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 937611773608330965, guid: 4a3fef0e7ed8cbe4eb40332127d20aee, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 8.8
       objectReference: {fileID: 0}
     - target: {fileID: 937611773608330965, guid: 4a3fef0e7ed8cbe4eb40332127d20aee, type: 3}
       propertyPath: m_LocalRotation.w
@@ -21359,7 +21443,9 @@ GameObject:
   - component: {fileID: 1300858583}
   - component: {fileID: 1300858585}
   - component: {fileID: 1300858584}
-  m_Layer: 0
+  - component: {fileID: 1300858586}
+  - component: {fileID: 1300858587}
+  m_Layer: 6
   m_Name: FIre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26160,6 +26246,32 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!65 &1300858586
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300858582}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3, y: 3, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1300858587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300858582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 496f1fc082758ac49b61b7d009bc6f1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _prompt: {fileID: 21300000, guid: b393179567c9b1044b048b749f3c5b81, type: 3}
 --- !u!114 &1301432654 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6503494370895939172, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
@@ -30368,7 +30480,9 @@ GameObject:
   - component: {fileID: 1929538009}
   - component: {fileID: 1929538011}
   - component: {fileID: 1929538010}
-  m_Layer: 0
+  - component: {fileID: 1929538012}
+  - component: {fileID: 1929538013}
+  m_Layer: 6
   m_Name: FIre (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35169,6 +35283,32 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!65 &1929538012
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929538008}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3, y: 3, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1929538013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929538008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 496f1fc082758ac49b61b7d009bc6f1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _prompt: {fileID: 21300000, guid: b393179567c9b1044b048b749f3c5b81, type: 3}
 --- !u!114 &1940539743 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6503494370676216471, guid: d329151b273fca74a8414c66fb1dd254, type: 3}
@@ -36030,7 +36170,9 @@ GameObject:
   - component: {fileID: 2129010100}
   - component: {fileID: 2129010102}
   - component: {fileID: 2129010101}
-  m_Layer: 0
+  - component: {fileID: 2129010103}
+  - component: {fileID: 2129010104}
+  m_Layer: 6
   m_Name: FIre (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40831,6 +40973,32 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!65 &2129010103
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2129010099}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3, y: 3, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2129010104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2129010099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 496f1fc082758ac49b61b7d009bc6f1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _prompt: {fileID: 21300000, guid: b393179567c9b1044b048b749f3c5b81, type: 3}
 --- !u!1001 &2135472135
 PrefabInstance:
   m_ObjectHideFlags: 0

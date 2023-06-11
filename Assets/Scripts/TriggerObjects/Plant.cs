@@ -35,6 +35,7 @@ public class Plant : MonoBehaviour, IInteractable
 
     public enum WaterState
     {
+        None = 0,
         First = 1,
         Second = 2
     }

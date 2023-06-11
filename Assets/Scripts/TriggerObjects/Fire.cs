@@ -11,8 +11,9 @@ public class Fire : MonoBehaviour, IInteractable
         if (GameManager.Instance.playerInfo.water == 3)
         {
             Debug.LogError("Interaction with fire");
-            GameManager.Instance.playerInfo.water -= 3;
-            GameManager.Instance.waterIcon.sprite = GameManager.Instance.waterStates[0];
+            GameManager.Instance.playerInfo.water -= 1;
+            var index = GameManager.Instance.playerInfo.water;
+            GameManager.Instance.waterIcon.sprite = GameManager.Instance.waterStates[index];
             
             //TODO nesto nemam pojma
             return true;
@@ -23,6 +24,6 @@ public class Fire : MonoBehaviour, IInteractable
 
     public bool CanInteract(Interactor interactor)
     {
-        return GameManager.Instance.playerInfo.water == 3;
+        return GameManager.Instance.playerInfo.water > 0;
     }
 }
