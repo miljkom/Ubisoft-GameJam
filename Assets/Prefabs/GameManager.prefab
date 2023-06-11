@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe50459a98b92374da9afa2486d6ab78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInfo: {fileID: 5774553325494212579, guid: 6170c56a7c94aa246acdc81f55abbd3f, type: 3}
+  playerInfo: {fileID: 5774553325494212579, guid: 4a3fef0e7ed8cbe4eb40332127d20aee, type: 3}
   rootInfo: []
+  plants: []
   gameOver: 0
