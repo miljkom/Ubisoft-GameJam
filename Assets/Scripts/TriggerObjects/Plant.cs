@@ -14,8 +14,10 @@ public class Plant : MonoBehaviour, IInteractable
     {
         if (GameManager.Instance.playerInfo.seed > 0)
         {
+            if (GameManager.Instance.playerInfo.water == 0) return false;
             Debug.LogError("Interaction with plant");
             GameManager.Instance.CompleteQuest(4);
+            GameManager.Instance.CompleteQuest(10);
             GameManager.Instance.playerInfo.seed--;
             GameManager.Instance.plants.Add(this);
             GameManager.Instance.seedIcon.sprite = GameManager.Instance.seedStates[0];
