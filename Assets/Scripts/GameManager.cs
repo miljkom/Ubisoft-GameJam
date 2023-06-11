@@ -163,7 +163,10 @@ public class GameManager : MonoBehaviour
     public void WaterIconShowed()
     {
         if (questsCompleted == 2)
+        {
             StartNewQuest();
+            playerInfo.battery--;
+        }
     }
 
     public void WaterCollected()
